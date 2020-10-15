@@ -1,23 +1,26 @@
 - title: Documentation
   url: docs
   links:
-    - title: "Getting Started"
-      url: "docs/getting-started"
+    - title: "Secret Store"
+      url: "features/secret-store"
       children:
-        - title: Features
-          url: "docs/getting-started#getting-started"
-        - title: Development
-          url: "docs/getting-started#development"
-        - title: Customization
-          url: "docs/getting-started#customization"
-    - title: "Extras"
-      url: "docs/extras"
+        - title: Creating a new provider
+          url: "features/secret-store/create-new-secret-provider"
+    - title: Secret Providers
+      url: "features/secret-store/provider"
       children:
-        - title: Quizzes
-          url: "docs/extras/example-quiz"
-        - title: Tags Page
-          url: "tags"
-    - title: "About"
-      url: "about"
-    - title: "News"
-      url: "news"
+        - title: Azure Key Vault
+          url: "features/secret-store/provider/azure-key-vault"
+        - title: Configuration
+          url: "features/secret-store/provider/configuration"
+        - title: Environment Variables
+          url: "features/secret-store/provider/environment-variables"
+        - title: User Secrets
+          url: "features/secret-store/provider/user-secrets"
+        - title: Creating a new provider
+          url: "features/secret-store/create-new-secret-provider"
+    - title: "Authentication"
+      url: "features/auth"
+      children:
+        - title: Azure Key Vault
+          url: "features/auth/azure-key-vault"
