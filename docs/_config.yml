@@ -16,6 +16,7 @@
 
 title: Arcus Security
 description: Azure Security development in a breeze
+repository: arcus-azure/arcus.security
 # plugins:
 #   - jemoji
   
