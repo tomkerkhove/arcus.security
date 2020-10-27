@@ -24,8 +24,8 @@
 <meta property="og:title" content="Search" />
 <meta property="og:description" content="Azure Security development in a breeze" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:4001" />
-<meta property="og:site_name" content="http://localhost:4001" />
+<meta property="og:url" content="http://localhost:4000" />
+<meta property="og:site_name" content="http://localhost:4000" />
 
 <meta itemprop="name" content="Search">
 <meta itemprop="description" content="Azure Security development in a breeze">
@@ -156,7 +156,7 @@ $(document).ready(function() {
               
               
                 <li class="breadcrumb-item active" aria-current="page">
-	          <a href="http://localhost:4001/search/">Search</a>
+	          <a href="http://localhost:4000/search/">Search</a>
                 </li>
                 
 	      </ol>
@@ -174,19 +174,6 @@ $(document).ready(function() {
 		
 				
 					
-					
-					"docs-example-page": {
-						"id": "docs-example-page",
-						"title": "A Nested Page",
-						"categories": "",
-						"url": " /docs/example-page",
-						"content": "A Nested Page\n\nThis is an example of a page that doesn’t have a permalink defined, and\nis not included in the table of contents (_data/toc.yml). This means\nthat it will render based on it’s path. Since it’s in docs/example-page.md,\nthe url will be docs/example-page/.\n\nLink to a subfolder\n\nNow let’s say we want to link to a subfolder, specifically with this\nsetup:\n\ndocs/\n  example-page.md  (-- we are here\n  subfolder/\n     example-page.md  (-- we want to link here\n\n\nYou can provide the relative path to the file, like subfolder/example-page.md\nand Jekyll will handle parsing it. For example:\n\n\n  here is that link\n\n\nAnd here\n is the same link, \nbut generated with the include statement:\n\n{% include doc.html name=\"here\" path=\"subfolder/example-page\" %}"
-					}
-					
-				
-		
-				
-					,
 					
 					"docs-extras-example-quiz": {
 						"id": "docs-extras-example-quiz",
@@ -338,7 +325,7 @@ $(document).ready(function() {
 						"title": "Documentation",
 						"categories": "",
 						"url": " /docs/",
-						"content": "Documentation\n\nWelcome to the Arcus Security Documentation pages! Here you can quickly jump to a \nparticular page.\n\n\n    \n            \n    \n    A Nested Page\n    An example of a nested page\n            \n    \n    Quiz\n    How to add interactive quizzes to your site.\n            \n    \n    Extras\n    Extras, including quizzes.\n            \n    \n    Getting Started\n    Getting started with Docsy Jekyll\n            \n    \n    A Nested Page\n    An example of a a nested page in a subfolder."
+						"content": "Documentation\n\nWelcome to the Arcus Security Documentation pages! Here you can quickly jump to a \nparticular page.\n\n\n    \n            \n    \n    Quiz\n    How to add interactive quizzes to your site.\n            \n    \n    Extras\n    Extras, including quizzes.\n            \n    \n    Getting Started\n    Getting started with Docsy Jekyll\n            \n    \n    A Nested Page\n    An example of a a nested page in a subfolder."
 					}
 					
 				
@@ -364,7 +351,7 @@ $(document).ready(function() {
 						"title": "",
 						"categories": "",
 						"url": " /feed.xml",
-						"content": "Arcus Security\n    Azure Security development in a breeze\n    http://localhost:4001/\n    \n    Thu, 15 Oct 2020 17:37:40 +0200\n    Thu, 15 Oct 2020 17:37:40 +0200\n    Jekyll v3.9.0"
+						"content": "Arcus Security\n    Azure Security development in a breeze\n    http://localhost:4000/\n    \n    Tue, 27 Oct 2020 14:58:57 +0100\n    Tue, 27 Oct 2020 14:58:57 +0100\n    Jekyll v3.9.0"
 					}
 					
 				
@@ -400,10 +387,10 @@ $(document).ready(function() {
 					
 					"": {
 						"id": "",
-						"title": "Docsy Jekyll Theme",
+						"title": "Arcus Security",
 						"categories": "",
 						"url": " /",
-						"content": "Welcome to Docsy Jekyll\n\nThis is a starter template for a docsy jekyll theme.\n\n\n\nPurpose\n\nGitHub pages uses Jekyll natively, so when I make documentation, I typically\nlook for Jekyll templates. Why? Using Jekyll means that I can use markdown,\nand allow for users to easily contribute, and build automatically just by\nway of pushing to a master branch (or general GitHub pages).\nI found Docsy, a beautiful Hugo template, but it requires hugo with GoLang\nwhich doesn’t render natively on GitHub pages. For this reason, I’ve spent\nsome time creating a custom Jekyll template that is (almost) as beautiful,\nand includes all the features that I might want.\n\nFeatures\n\nWhat are these features? You should see the Getting Started\n\nguide for a complete summary. Briefly:\n\n\n  User interaction including consistent permalinks, links to ask questions via GitHub issues, and edit the file on GitHub directly.\n  Search across posts, documentation, and other site pages, with an ability to exclude from search.\n  External Search meaning an ability to link any page tag to trigger an external search.\n  Documentation A documentation collection that was easy to organize on the filesystem, render with nested headings for the user, and refer to in markdown.\n  Pages A separate folder for more traditional pages (e.g, about).\n  Navigation: Control over the main navigation on the left of the page, and automatic generation of table of contents for each page on the right.\n  News A posts feed for news and updates, along with an archive (organized by year).\n  Templates or specifically, “includes” that make it easy to create an alert, documentation link, or other content.\n  Continuous Integration recipes to preview the site\n\n\nFor features, getting started with development, see the Getting Started\n page. Would you like to request a feature or contribute?\nOpen an issue"
+						"content": "Arcus Security\n\n\n\n\nSecurity for Azure development in a breeze.\n\n\n\nInstallation\n\nWe provide a NuGet package per provider and area.\n\nHere is how you install all Arcus Security packages\nPM &gt; Install-Package Arcus.Security.All\n\n\nHere is how you consume secrets for Azure Key Vault:\nPM &gt; Install-Package Arcus.Security.Providers.AzureKeyVault\n\n\nFeatures\n\n\n  Using a Secret Store\n    \n      What is it?\n      Providers\n        \n          Azure Key Vault\n          Configuration\n          Environment variables\n          User Secrets\n        \n      \n      Creating your own secret provider\n    \n  \n  Interacting with Secrets\n    \n      General\n      Consume from Azure Key Vault\n      Authenticate with Azure Key Vault"
 					}
 					
 				
@@ -444,7 +431,7 @@ $(document).ready(function() {
 						"title": "",
 						"categories": "",
 						"url": " /assets/js/main.js",
-						"content": "(function($) {\n    'use strict';\n    $(function() {\n        $('[data-toggle=\"tooltip\"]').tooltip();\n        $('[data-toggle=\"popover\"]').popover();\n        $('.popover-dismiss').popover({\n            trigger: 'focus'\n        })\n    });\n\n    function bottomPos(element) {\n        return element.offset().top + element.outerHeight();\n    }\n    $(function() {\n        var promo = $(\".js-td-cover\");\n        if (!promo.length) {\n            return\n        }\n        var promoOffset = bottomPos(promo);\n        var navbarOffset = $('.js-navbar-scroll').offset().top;\n        var threshold = Math.ceil($('.js-navbar-scroll').outerHeight());\n        if ((promoOffset - navbarOffset) < threshold) {\n            $('.js-navbar-scroll').addClass('navbar-bg-onscroll');\n        }\n        $(window).on('scroll', function() {\n            var navtop = $('.js-navbar-scroll').offset().top - $(window).scrollTop();\n            var promoOffset = bottomPos($('.js-td-cover'));\n            var navbarOffset = $('.js-navbar-scroll').offset().top;\n            if ((promoOffset - navbarOffset) < threshold) {\n                $('.js-navbar-scroll').addClass('navbar-bg-onscroll');\n            } else {\n                $('.js-navbar-scroll').removeClass('navbar-bg-onscroll');\n                $('.js-navbar-scroll').addClass('navbar-bg-onscroll--fade');\n            }\n        });\n    });\n}(jQuery));\n(function($) {\n    'use strict';\n    var Search = {\n        init: function() {\n            $(document).ready(function() {\n                $(document).on('keypress', '.td-search-input', function(e) {\n                    if (e.keyCode !== 13) {\n                        return\n                    }\n                    var query = $(this).val();\n                    var searchPage = \"http://localhost:4001/search/?q=\" + query;\n                    document.location = searchPage;\n                    return false;\n                });\n            });\n        },\n    };\n    Search.init();\n}(jQuery));"
+						"content": "(function($) {\n    'use strict';\n    $(function() {\n        $('[data-toggle=\"tooltip\"]').tooltip();\n        $('[data-toggle=\"popover\"]').popover();\n        $('.popover-dismiss').popover({\n            trigger: 'focus'\n        })\n    });\n\n    function bottomPos(element) {\n        return element.offset().top + element.outerHeight();\n    }\n    $(function() {\n        var promo = $(\".js-td-cover\");\n        if (!promo.length) {\n            return\n        }\n        var promoOffset = bottomPos(promo);\n        var navbarOffset = $('.js-navbar-scroll').offset().top;\n        var threshold = Math.ceil($('.js-navbar-scroll').outerHeight());\n        if ((promoOffset - navbarOffset) < threshold) {\n            $('.js-navbar-scroll').addClass('navbar-bg-onscroll');\n        }\n        $(window).on('scroll', function() {\n            var navtop = $('.js-navbar-scroll').offset().top - $(window).scrollTop();\n            var promoOffset = bottomPos($('.js-td-cover'));\n            var navbarOffset = $('.js-navbar-scroll').offset().top;\n            if ((promoOffset - navbarOffset) < threshold) {\n                $('.js-navbar-scroll').addClass('navbar-bg-onscroll');\n            } else {\n                $('.js-navbar-scroll').removeClass('navbar-bg-onscroll');\n                $('.js-navbar-scroll').addClass('navbar-bg-onscroll--fade');\n            }\n        });\n    });\n}(jQuery));\n(function($) {\n    'use strict';\n    var Search = {\n        init: function() {\n            $(document).ready(function() {\n                $(document).on('keypress', '.td-search-input', function(e) {\n                    if (e.keyCode !== 13) {\n                        return\n                    }\n                    var query = $(this).val();\n                    var searchPage = \"http://localhost:4000/search/?q=\" + query;\n                    document.location = searchPage;\n                    return false;\n                });\n            });\n        },\n    };\n    Search.init();\n}(jQuery));"
 					}
 					
 				
